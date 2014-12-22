@@ -43,4 +43,4 @@ Simple! Any questions, just ask.
 
 ## Why was this made?
 
-I made this for Google's Web Starter Kit for their Lite version of Material Design to ensure code consistency between all components submitted, as well as all the other benefits listed at the top of this readme.
+I made this for Google's [Web Starter Kit](https://github.com/google/web-starter-kit "View the project on GitHub!") for their Lite version of Material Design to ensure code consistency between all components submitted, as well as all the other benefits listed at the top of this readme.
