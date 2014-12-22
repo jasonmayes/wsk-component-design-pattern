@@ -60,10 +60,15 @@ var componentHandler = (function() {
    * the element to.
    */
   function upgradeElementInternal(element, jsClass) {
-    // Only upgrade elements that have not already been upgraded.
-    if (element.getAttribute('data-upgraded') === null) {
+    // Only upgrade elements that have not already been upgraded for the given
+    // Class type. This allows you to upgrade an element with multiple classes.
+    var dataUpgraded = element.getAttribute('data-upgraded');
+    if (dataUpgraded === null || dataUpgraded.indexOf(jsClass) === -1) {
       // Upgrade element.
-      element.setAttribute('data-upgraded', '');
+      if (dataUpgraded === null) {
+        dataUpgraded = '';
+      }
+      element.setAttribute('data-upgraded', dataUpgraded + ',' + jsClass);
       var registeredClass = findRegisteredClass_(jsClass);
       if (registeredClass) {
         createdComponents_.push(new registeredClass.classConstructor(element));
