@@ -9,7 +9,7 @@ Alright, lets say you have some HTML like this:
 
 ```html
 <div class="myComponent">Some magical component</div>
-<div class="myComponent">Another instance of magical component - maybe it is a fancy button</div>
+<div class="myComponent">Another instance component - maybe it is a fancy button</div>
 <div class="myComponent">You get the idea</div>
 <div class="myComponent">There could be thousands...</div>
 ```
