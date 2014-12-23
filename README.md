@@ -23,7 +23,7 @@ This process should be simpler - that is why this design pattern exists. Simply 
 ```html
 <div class="myComponent">Some magical component</div>
 <div class="myComponent">Another instance of magical component</div>
-<div class="someOtherComponent">Another instance of magical component</div>
+<div class="someOtherComponent">Some other component</div>
 <!-- Insert following just before closing <body> tag -->
 <script type="text/javascript" src="js/ComponentHandler.js"></script>
 <script type="text/javascript" src="js/myComponent.js"></script>
@@ -35,7 +35,9 @@ That is it! You are ready to rock. The component handler will automaticlly searc
 If you want to create a new HTMLElement later that needs to be upgraded to any component you have imported you then just do this in JavaScript:
 
 ```javascript
-// Simply pass a reference to the HTMLElement you want to upgrade along with the class name of the component you wish to upgrade it to. It will only upgrade an element once for each class type you assign to it.
+// Simply pass a reference to the HTMLElement you want to upgrade along
+// with the class name of the component you wish to upgrade it to. It
+// will only upgrade an element once for each class type you assign to it.
 ComponentHandler.upgradeElement(yourNewHtmlElement, 'myComponent');
 ```
 
