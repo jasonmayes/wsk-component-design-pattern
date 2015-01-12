@@ -85,12 +85,12 @@ MaterialComponentClassname.prototype.init = function() {
 }
 
 
-window.addEventListener('load', function() {
-  // On document ready, the component registers itself. It can assume
-  // componentHandler is available in the global scope.
-  componentHandler.register({
-    constructor: MaterialComponentClassname,
-    classAsString: 'MaterialComponentClassname',
-    cssClass: 'wskDemo'
-  });
+
+// The component registers itself. It can assume componentHandler is
+// available in the global scope.
+componentHandler.register({
+  constructor: MaterialComponentClassname,
+  classAsString: 'MaterialComponentClassname',
+  cssClass: 'wskDemo'
+  
 });
