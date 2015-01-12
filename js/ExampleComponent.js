@@ -92,5 +92,4 @@ componentHandler.register({
   constructor: MaterialComponentClassname,
   classAsString: 'MaterialComponentClassname',
   cssClass: 'wskDemo'
-  
 });
